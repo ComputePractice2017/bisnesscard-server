@@ -22,7 +22,7 @@ func Run()  {
 	r.HandleFunc("/getInfo", getInfo).Methods("GET")
 	r.HandleFunc("/create", createCard).Methods("POST")
 	r.HandleFunc("/update", update).Methods("PUT")
-	r.HandleFunc("/delete", delete).Methods("DELETE")
+	r.HandleFunc("/delete", deleteCard).Methods("DELETE")
 
 	log.Println("Running the server on port 8000...")
 	http.ListenAndServe(":8000", r)
