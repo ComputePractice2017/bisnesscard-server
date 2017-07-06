@@ -3,7 +3,7 @@ package api
 import (
 	"log"
 	"net/http"
-	"../model"
+	"github.com/ComputePractice2017/bisnesscard-server/model"
 	"github.com/gorilla/mux"
 )
 
